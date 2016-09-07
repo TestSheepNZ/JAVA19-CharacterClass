@@ -1,5 +1,16 @@
 package CharacterControl;
 
+/*
+ * This program is part of my learning Java series
+ * This one explores code for an RPG character
+ * 
+ * Find the blog here,
+ * http://testsheepnz.blogspot.co.nz/2016/09/java-19-rpg-character-class.html
+ * 
+ * For more information - please reread.
+ * 
+ * Mike Talks, Sept 2016
+ */
 
 import java.util.ArrayList;
 
@@ -135,6 +146,7 @@ public class genericCharacterClass {
 				if(health < 18)
 				{
 					health++;
+					current_health++;
 					change=true;
 				}
 				else
@@ -158,7 +170,7 @@ public class genericCharacterClass {
 		}
 	}
 	
-	public boolean addSkill(String newSkill)
+	private boolean addSkill(String newSkill)
 	{
 		
 		if(skills.contains(newSkill))

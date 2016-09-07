@@ -1,5 +1,16 @@
 package CharacterControl;
 
+/*
+ * This program is part of my learning Java series
+ * This one explores code for an RPG character
+ * 
+ * Find the blog here,
+ * http://testsheepnz.blogspot.co.nz/2016/09/java-19-rpg-character-class.html
+ * 
+ * For more information - please reread.
+ * 
+ * Mike Talks, Sept 2016
+ */
  
 
 
