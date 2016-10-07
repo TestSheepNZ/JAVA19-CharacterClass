@@ -14,7 +14,7 @@ package CharacterControl;
 
 import java.util.ArrayList;
 
-public class genericCharacterClass {
+public class GenericCharacterClass {
 
 	//Attributes
 	private String character_name;
@@ -32,9 +32,9 @@ public class genericCharacterClass {
 	private long xp;
 	
 	//Constructor
-	public genericCharacterClass (String name, int fight, int shoot, int str, int hth)
+	public GenericCharacterClass (String name, int fight, int shoot, int str, int hth)
 	{
-		//Set intial values
+		//Set initial values
 		character_name = name;
 		
 		fighting = fight;
@@ -199,7 +199,7 @@ public class genericCharacterClass {
 			 */
 			if(skills.contains("Fake Death"))
 			{
-				diceClass cheatDeath = new diceClass(2);
+				DiceClass cheatDeath = new DiceClass(2);
 				if (cheatDeath.rollDice() == 1)
 				{
 					current_health = 1;
@@ -239,7 +239,7 @@ public class genericCharacterClass {
 			{
 				xp -= 100;
 				alive=true;
-				diceClass raise_health = new diceClass(6);
+				DiceClass raise_health = new DiceClass(6);
 				
 				//We're adding 2D6 worth here
 				current_health += raise_health.rollDice();
